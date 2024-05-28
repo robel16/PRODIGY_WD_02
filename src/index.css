@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s;
+}
+
+.stopwatch-container {
+  width: 300px;
+  padding: 20px;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.stopwatch-container.dark {
+  background: #2c2c2c;
+  color: #fff;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+  border: 2px dashed #ccc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time-display {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.mode-toggle {
+  border: none;
+  background: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+  color: inherit;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body.dark-mode {
+  background-color: #121212;
+}
